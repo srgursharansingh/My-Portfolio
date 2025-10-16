@@ -1,0 +1,47 @@
+
+/* Custom Fonts */
+@font-face {
+  font-family: 'SofiaSansCondensed';
+
+  /* Adjust the path relative to your CSS file */
+  src: url('./Fonts/SofiaSansCondensed-Bold.aaede6389f871aa6d438.woff2') format('woff2');
+font-weight: bold;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'SofiaSansCondensed';
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+  /* Adjust the path relative to your CSS file */
+  src: url('./Fonts/SofiaSansCondensed-SemiBold.5dd1068d7811d649e8bd.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SplineSansMono';
+  font-weight: 300; /* Light */
+  font-style: normal;
+  /* Adjust the path relative to your CSS file */
+  src: url('./Fonts/SplineSansMono-Light.3da0fba3453a62aa562a.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SplineSansMono';
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  /* Adjust the path relative to your CSS file */
+  src: url('./Fonts/SplineSansMono-Regular.847e21281e9bbe6cda7b.woff2') format('woff2');
+  font-display: swap;
+}
+
+body {
+  font-family: 'SofiaSansCondensed';
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

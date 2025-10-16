@@ -1,0 +1,32 @@
+/* In your Footer.scss or global stylesheet */
+
+/* This targets any element with the 'footer-line-animation' class */
+.footer-line-animation {
+  position: relative;
+  /* Required for the line to animate from the bottom */
+}
+
+.footer-line-animation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px; /* The thickness of the line */
+  background: currentColor; /* Inherits the link's text color */
+  transform: scaleX(0);
+  /* Use your specified transition variable (e.g., 'var(--transition-main)') or a common one */
+  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1); 
+  transform-origin: left;
+}
+
+/* On hover: scale the line from 0 to 1 (left to right) */
+.footer-line-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* When leaving hover: scale the line from 1 to 0 (right to left) */
+.footer-line-animation:not(:hover)::after {
+  transform-origin: right;
+}

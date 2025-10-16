@@ -1,0 +1,71 @@
+.physics-wrapper {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  background: black;
+}
+
+.canvas-text {
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--text-color);
+    translate: 0 -100%;
+    z-index: 10;
+  }
+}
+
+.physics-text {
+  font-family: 'Sofia Sans Condensed';
+  font-weight: 700;
+  font-size: 170rem;
+  line-height: 162rem;
+  text-transform: uppercase;
+}
+
+.physics-line {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.char {
+  display: inline-block;
+  font-family: 'Spline Sans Mono';
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.white .char {
+  color: white;
+}
+
+.gray .char {
+  color: #908c8c;
+}
+
+.copy-tooltip {
+  font-family: 'Spline Sans Mono';
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  padding: 4rem 20rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 12rem;
+  border-radius: 3rem;
+  transform: translate(-50%, -50%);
+  // transition: clip-path 0.6s var(--transition-main);
+  clip-path: inset(0 100% 0 0);
+  z-index: 200;
+
+  span {
+    font-size: 12rem;
+  }
+}
