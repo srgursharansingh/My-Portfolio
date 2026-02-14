@@ -37,7 +37,6 @@ const Title = ({ word1, word2, trigger = null }) => {
             start: "bottom 90%", 
             end: "top 10%", 
             scrub: true, 
-             markers: true
           }
         : {
             // Fallback for no trigger (e.g., load-in animation) - Scrubbing doesn't apply well here, so we keep the delay
