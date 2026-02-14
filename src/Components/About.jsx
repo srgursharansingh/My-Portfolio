@@ -77,7 +77,7 @@ const About = () => {
             scrub: 1, // Smoothly link animation to scroll progress
             pin: true, // PINNING the wrapper element here
             scroller: scroller || window,
-            markers: true,
+           
         }
     });
 
